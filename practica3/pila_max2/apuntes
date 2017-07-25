@@ -1,0 +1,22 @@
+con todas las clases: 
+	VD template
+			.h y .cpp en include porque son templates
+
+despues añadir en otras carpetas los cpp y h de pilamax en funcion de cada tipo de tda creado
+
+
+pilamaxvd:
+	private:
+		VD<elemento>datos;  (elemento = struct con dato y maximo)
+	public:
+		bool vacio()
+		void poner()
+		void quitar()
+		elemento tope()		
+		*** SOLO CAMBIA IMPLEMENTACION PARA CADA TIPO DE TDA DISTINTO
+
+pilamax.h
+	define cual compilo (cual incluir en funcion de la opcion que se le meta)
+pilamax.cpp
+	en funcion de lo que ponga el .h, se transforma en pilamaxvd o lo que sea
+
